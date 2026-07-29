@@ -73,7 +73,7 @@ This file stores the project's cumulative audio engineering findings, reference 
   1. One notebook per session/phase — never generate multiple notebooks in one pass.
   2. Each notebook must be executed locally (`jupyter nbconvert --execute`) and confirmed error-free before being handed off.
   3. After delivering a notebook + summary, STOP and wait for the project owner's explicit confirmation before starting the next one.
-- **Status:** Notebook 00 in progress this session. Notebooks 01-05 not yet started.
+- **Status:** Notebook 00 (Sound & Loudness Vocabulary) complete. Notebook 01 (Stereo Field & First Hypothesis) complete this session — rebuilds the Lab 1 Mid/Side proxy from scratch (reproduces the exact original numbers: Elissa proxy median +10.73 dB, Suno tracks −2.10 to −3.06 dB gap vs Elissa), includes a calibration check against Elissa's real stems (proxy over-reports by +7.40 dB vs ground truth), and ends by flagging the untested "relative ranking survives" assumption that Notebook 02 goes on to break. Notebooks 02-05 not yet started.
 
 ---
 
@@ -89,3 +89,4 @@ This file stores the project's cumulative audio engineering findings, reference 
 8. **Intervention Test — Dynamic Compression:** Apply gentle compression to the vocal stem of Ya Dar Maya orig to reduce the 13.55 dB variance to match Elissa's 4.11 dB. Does consistency alone fix the perception?
 9. **Instrumental Stem Isolation Quality:** Compare the instrumental stems across tracks — does Suno's instrumental have more energy in vocal-range frequencies (200-500 Hz, 2-5 kHz) that would mask the vocal even at equal levels?
 10. **Audacity Manual Listen:** For each track, solo the vocal stem and listen. Does the Suno vocal stem sound clean, or is there audible bleed/artifacts from the separation?
+
