@@ -69,6 +69,7 @@ TRACKS = [
 
 def rms_db(x, eps=1e-10):
     '''Same loudness function from Notebook 00 — RMS energy converted to dB.'''
+    rms = np.sqrt(np.mean(x ** 2))
     return 20 * np.log10(rms + eps)
 
 print("Setup complete. Tracks registered:", len(TRACKS))""")
@@ -209,13 +210,13 @@ code(
 WIN_SEC = 1.0
 
 def windows(sig, sr, win_sec=WIN_SEC):
-    \"\"\"Yield consecutive non-overlapping 1-second chunks of a signal.\"\"\"
+    '''Yield consecutive non-overlapping 1-second chunks of a signal.'''
     n = int(win_sec * sr)
     for i in range(0, len(sig) - n, n):
         yield sig[i:i + n]
 
 def mid_side_proxy(path):
-    \"\"\"Load a stereo track and return an array of (mid_dB - side_dB) per active 1s window.\"\"\"
+    '''Load a stereo track and return an array of (mid_dB - side_dB) per active 1s window.'''
     y, sr = librosa.load(path, sr=22050, mono=False)
     if y.ndim == 1:          # safety: mono file, no stereo info to extract
         return np.array([])
@@ -299,7 +300,7 @@ code(
 ELISSA_INSTR  = f"{DATA_DIR}/elisa_maktooba_leek/elisa_maktooba_leek-Instrumental.mp3"
 
 def ground_truth_prominence(vocal_path, instr_path):
-    \"\"\"Real vocal_dB - instrumental_dB per active 1s window, using true isolated stems.\"\"\"
+    '''Real vocal_dB - instrumental_dB per active 1s window, using true isolated stems.'''
     voc, sr_v = librosa.load(vocal_path, sr=22050, mono=True)
     inst, sr_i = librosa.load(instr_path, sr=22050, mono=True)
     n = min(len(voc), len(inst))
