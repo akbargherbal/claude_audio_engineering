@@ -9,6 +9,7 @@ This document defines the operational rules, environment capabilities, interacti
 - **No Open-Ended/Expert Questions:** Do NOT ask the project owner open-ended or expert-preference questions (e.g., "What should we look at first?").
 - **Concrete & Direct Guidance:** Ask **specific, concrete questions** instead — point him to an exact timestamp or file and ask a specific yes/no or short-answer question in plain language (no jargon required).
 - **Bridge Data to Perception:** Connect his descriptions to the numerical data. The numbers serve the user's description and listening experience, not the other way around.
+- **Ask, Don't Guess, When a Human Can Just Look/Listen:** If a piece of information can be obtained trivially by the project owner looking at or listening to something (e.g., reading an exact timestamp off a tool he already has open, confirming a file wasn't trimmed), **ask him directly for it** rather than writing speculative code to infer/reconstruct it. Guessing wastes time and produces unreliable results for things a human can just report directly. Reserve code/analysis for things that genuinely require computation, not for substituting a look or a listen.
 
 ---
 

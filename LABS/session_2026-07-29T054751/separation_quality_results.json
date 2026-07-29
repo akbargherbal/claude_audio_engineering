@@ -1,0 +1,80 @@
+[
+  {
+    "track": "Elissa (ref)",
+    "n_frames": 317,
+    "reconstruction_corr": 0.9993,
+    "reconstruction_err_db_median": -2.75,
+    "reconstruction_err_db_iqr": [
+      -3.08,
+      -2.63
+    ],
+    "vocal_stem_hard_silent_frame_fraction": 0.312,
+    "quiet_nonzero_frame_rms_median_db": -88.29,
+    "quiet_nonzero_frame_spectral_flatness_median": 0.43273
+  },
+  {
+    "track": "Ya Dar Maya (orig)",
+    "n_frames": 262,
+    "reconstruction_corr": 0.9999,
+    "reconstruction_err_db_median": -0.0,
+    "reconstruction_err_db_iqr": [
+      -0.0,
+      -0.0
+    ],
+    "vocal_stem_hard_silent_frame_fraction": 0.21,
+    "quiet_nonzero_frame_rms_median_db": -120.08,
+    "quiet_nonzero_frame_spectral_flatness_median": 0.95547
+  },
+  {
+    "track": "SONG_A",
+    "n_frames": 269,
+    "reconstruction_corr": 0.9999,
+    "reconstruction_err_db_median": -0.0,
+    "reconstruction_err_db_iqr": [
+      -0.0,
+      -0.0
+    ],
+    "vocal_stem_hard_silent_frame_fraction": 0.279,
+    "quiet_nonzero_frame_rms_median_db": -125.11,
+    "quiet_nonzero_frame_spectral_flatness_median": 0.95958
+  },
+  {
+    "track": "SONG_B",
+    "n_frames": 273,
+    "reconstruction_corr": 0.9999,
+    "reconstruction_err_db_median": -0.0,
+    "reconstruction_err_db_iqr": [
+      -0.0,
+      -0.0
+    ],
+    "vocal_stem_hard_silent_frame_fraction": 0.3,
+    "quiet_nonzero_frame_rms_median_db": -101.48,
+    "quiet_nonzero_frame_spectral_flatness_median": 0.66688
+  },
+  {
+    "track": "SONG_C",
+    "n_frames": 279,
+    "reconstruction_corr": 1.0,
+    "reconstruction_err_db_median": -0.0,
+    "reconstruction_err_db_iqr": [
+      -0.0,
+      -0.0
+    ],
+    "vocal_stem_hard_silent_frame_fraction": 0.222,
+    "quiet_nonzero_frame_rms_median_db": -100.86,
+    "quiet_nonzero_frame_spectral_flatness_median": 0.6777
+  },
+  {
+    "track": "SONG_D",
+    "n_frames": 259,
+    "reconstruction_corr": 1.0,
+    "reconstruction_err_db_median": -0.32,
+    "reconstruction_err_db_iqr": [
+      -0.32,
+      -0.32
+    ],
+    "vocal_stem_hard_silent_frame_fraction": 0.274,
+    "quiet_nonzero_frame_rms_median_db": -110.58,
+    "quiet_nonzero_frame_spectral_flatness_median": 0.6597
+  }
+]
