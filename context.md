@@ -58,7 +58,26 @@ This file stores the project's cumulative audio engineering findings, reference 
 
 ---
 
-## 4. Active Research Questions & Next Session Ideas
+## 4. Pedagogical Pause — Curriculum Track [Session 5]
+
+- **Decision:** After Labs 1-4 (see Section 3 above), the project owner requested a deliberate pause from open research to build a beginner-friendly theory + practice curriculum, so he can properly understand the audio-engineering concepts (RMS/dB, stereo field, stems, spectral analysis, separation quality, reverb) that the prior labs' scripts already used but never explained from first principles.
+- **Format:** 6 standalone Jupyter notebooks under `notebooks/`, one per session/phase (never all at once — see Execution Protocol below), each following the *actual dramatic arc of Labs 1-4* (naive proxy hypothesis → confirmed → broke under real stems → tool itself had to be audited → automated reverb metric failed → back to human listening) rather than a generic textbook order. Each notebook must ground every theoretical concept in the repo's real audio samples (Elissa reference track vs. Suno tracks/stems), include `matplotlib` visualizations, and end with a folded **Self-Check** Q&A section.
+- **Approved Notebook Index (6 total):**
+  1. `00_sound_loudness_vocabulary.ipynb` — Sound, Loudness & the Vocabulary Every Script Uses (waveform, sample rate, RMS, dB laws, instrument vs. human voice basics).
+  2. `01_stereo_field_first_hypothesis.ipynb` — The Stereo Field & Our First (Flawed) Hypothesis (Mid/Side decomposition; rebuild the Lab 1 proxy and see how it became "confirmed" too fast).
+  3. `02_real_stems_vs_proxy.ipynb` — Real Stems vs. Proxy: When the "Confirmed" Finding Broke (AI stems vs. proxy; mean gap vs. std-dev/consistency).
+  4. `03_reading_a_spectrum.ipynb` — Reading a Spectrum: Where Sounds "Live" in Frequency (FFT/STFT, frequency bands, presence band check).
+  5. `04_auditing_the_tool.ipynb` — Auditing the Tool Before Trusting the Numbers (separation quality audit, hard gate, residual bleed).
+  6. `05_chasing_reverb.ipynb` — Chasing Reverb: When Automated Metrics Fail (reverb tail investigation, why decay-slope metrics failed, return to spectrograms/listening).
+- **Execution Protocol (strict, to prevent token exhaustion / mid-notebook cutoffs):**
+  1. One notebook per session/phase — never generate multiple notebooks in one pass.
+  2. Each notebook must be executed locally (`jupyter nbconvert --execute`) and confirmed error-free before being handed off.
+  3. After delivering a notebook + summary, STOP and wait for the project owner's explicit confirmation before starting the next one.
+- **Status:** Notebook 00 in progress this session. Notebooks 01-05 not yet started.
+
+---
+
+## 5. Active Research Questions & Next Session Ideas
 
 1. ~~**Vocal Level Verification:** Verify if the ~3 dB vocal prominence gap holds true across all tracks.~~ **DONE** — Gap is smaller (~0–1.2 dB) than proxy suggested; the real issue is consistency.
 2. ~~**Frequency Presence Analysis:** Check 2-5 kHz presence band.~~ **DONE** — Not a treble deficiency.
